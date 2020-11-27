@@ -1,0 +1,35 @@
+add_newline = false
+format = "$battery$directory$git_branch$git_commit$git_state$git_status$package$golang$nodejs$python$rust$memory_usage$aws$status$jobs$line_break$character"
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+
+[[battery.display]] 
+threshold = 10
+style = "bold red"
+
+[[battery.display]]
+threshold = 60
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 100
+style = "bold green"
+
+[character]
+success_symbol = "[ᗎ](bold green)"
+error_symbol = "[ᗎ](bold red)"
+
+[git_status]
+conflicted = "  "
+ahead = "  "
+behind = "  "
+diverged = "  "
+untracked = "  "
+stashed = "  "
+modified = "  "
+staged = "  "
+renamed = "  "
+deleted = " ✘ "
