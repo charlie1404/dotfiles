@@ -29,7 +29,7 @@ function d () {
     dirs -v | head -10
   fi
 }
-compdef _dirs d
+# compdef _dirs d
 
 alias l='exa -F'
 alias ls='exa -F'

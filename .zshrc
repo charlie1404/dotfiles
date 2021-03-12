@@ -34,11 +34,16 @@ export STARSHIP_CONFIG=$ZSH/starship.toml
 ZSH_CACHE_DIR="$ZSH/cache"
 
 fpath=($ZSH/modules/zsh-completions/src $ZSH/functions $ZSH/completions $fpath)
-autoload -U compaudit compinit
-# compinit # when completions changed
+autoload -Uz compaudit compinit
+compaudit
+compinit
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 source "$ZSH/alias.sh"
 source "$ZSH/secret/env.sh"
+source $HOME/.cargo/env
 
 for lib ($ZSH/lib/*.zsh); do source $lib; done
 
@@ -46,7 +51,7 @@ source $ZSH/modules/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.fzf.zsh
-# source "$HOME/.nvm/nvm.sh"
+source "$HOME/.nvm/nvm.sh"
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main pattern brackets line cursor root)
 ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
