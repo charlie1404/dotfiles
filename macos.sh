@@ -29,6 +29,8 @@ brew install grex
 brew install cjbassi/ytop
 brew install bandwhich
 brew install fish
+brew install navi
+brew install git-delta
 
 # duf
 brew cask dbeaver-community
