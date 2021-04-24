@@ -20,13 +20,13 @@ unsetopt BG_NICE                 # Don't run all background jobs at a lower prio
 # unsetopt CHECK_JOBS              # Don't report on jobs when shell exit.
 setopt correct_all
 
-export ZSH="$HOME/.dotfiles"
+export ZSH="$HOME/dotfiles"
 export TERM="xterm-256color"
 export EDITOR="nano"
 export VISUAL="nano"
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 export NODE_PATH=$NODE_PATH:$HOME/.config/yarn/global/node_modules
-export PATH=$PATH:$HOME/bin:$HOME/.cargo/bin:$HOME/opt/go/bin
+export PATH=$PATH:$HOME/bin:$HOME/.cargo/bin:$HOME/opt/go/bin:$HOME/.config/yarn/global
 export LC_ALL=en_US.UTF-8
 export STARSHIP_CONFIG=$ZSH/starship.toml
 # export BAT_PAGER="less -g -i -R -S -w"
@@ -34,11 +34,16 @@ export STARSHIP_CONFIG=$ZSH/starship.toml
 ZSH_CACHE_DIR="$ZSH/cache"
 
 fpath=($ZSH/modules/zsh-completions/src $ZSH/functions $ZSH/completions $fpath)
-autoload -U compaudit compinit
-# compinit # when completions changed
+autoload -Uz compaudit compinit
+compaudit
+compinit
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 source "$ZSH/alias.sh"
 source "$ZSH/secret/env.sh"
+# source $HOME/.cargo/env
 
 for lib ($ZSH/lib/*.zsh); do source $lib; done
 

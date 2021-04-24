@@ -1,10 +1,12 @@
 add_newline = false
 format = "$battery$directory$git_branch$git_commit$git_state$git_status$package$golang$nodejs$python$rust$memory_usage$aws$status$jobs$line_break$character"
 
+command_timeout = 2000
+
 [battery]
 full_symbol = "🔋"
-charging_symbol = "⚡️"
-discharging_symbol = "💀"
+# charging_symbol = "⚡️"
+discharging_symbol = "💀 "
 
 [[battery.display]] 
 threshold = 10

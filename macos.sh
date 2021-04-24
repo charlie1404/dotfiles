@@ -29,6 +29,8 @@ brew install grex
 brew install cjbassi/ytop
 brew install bandwhich
 brew install fish
+brew install navi
+brew install git-delta
 
 # duf
 brew cask dbeaver-community
@@ -38,3 +40,8 @@ brew cask sloth
 alias copy="tr -d '\n' | pbcopy"
 alias o="open"
 alias run="open -a 'Google Chrome Canary' --args --disable-web-security --user-data-dir='/Users/gupta/Desktop/nosecurity'"
+
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.gitconfig.work ~/.gitconfig.work
+ln -s ~/dotfiles/.gitignore ~/.gitignore
