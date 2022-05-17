@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.zshrc.work": "shellscript",
+    "*.gitconfig.work": "properties",
+    "*.gitignore.work": "ignore"
+  }
+}
