@@ -25,8 +25,8 @@ export TERM="xterm-256color"
 export EDITOR="nano"
 export VISUAL="nano"
 export LESS='-F -g -i -M -R -S -w -X -z-4'
-export NODE_PATH=$NODE_PATH:$HOME/.config/yarn/global/node_modules
-export PATH=$PATH:$HOME/bin:$HOME/.cargo/bin:$HOME/opt/go/bin:$HOME/.config/yarn/global
+export PATH=$PATH:$HOME/bin:$HOME/.cargo/bin:$HOME/go/bin
+
 export LC_ALL=en_US.UTF-8
 export STARSHIP_CONFIG=$ZSH/starship.toml
 # export BAT_PAGER="less -g -i -R -S -w"
@@ -42,7 +42,7 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 source "$ZSH/alias.sh"
-source "$ZSH/secret/env.sh"
+source "$ZSH/.zshrc.work"
 # source $HOME/.cargo/env
 
 for lib ($ZSH/lib/*.zsh); do source $lib; done
