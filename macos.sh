@@ -19,9 +19,7 @@ brew install trash
 brew install tree
 brew install wget
 brew install xsv
-brew install yarn
 brew install zsh
-brew install tmux
 brew install coreutils
 brew install dust
 brew install procs
@@ -31,10 +29,15 @@ brew install bandwhich
 brew install fish
 brew install navi
 brew install git-delta
+brew install gpg-tui
+brew install tmux
+brew install zellij
+# brew install atuin # history manager with sqlite
 
 # duf
-brew cask dbeaver-community
-brew cask sloth
+brew install --cask dbeaver-community
+brew install --cask marta
+brew install --cask sloth
 
 # TODO
 alias copy="tr -d '\n' | pbcopy"
