@@ -32,9 +32,37 @@ brew install git-delta
 brew install gpg-tui
 brew install tmux
 brew install zellij
+brew install derailed/k9s/k9s
 # brew install atuin # history manager with sqlite
 
-# duf
+##### brew search gnu
+# brew install gnu-tar
+# brew install gnu-sed
+# brew install gawk
+# brew install gnutls
+# brew install gnu-indent
+# brew install gnu-getopt
+# brew install grep
+# brew install binutils
+# brew install diffutils
+# brew install ed
+# brew install gnu-which
+# brew install gzip
+# brew install watch
+# brew install wdiff --with-gettext
+# brew install wget
+# brew install bash
+# brew install gdb  # gdb requires further actions to make it work. See `brew info gdb`.
+# brew install gpatch
+# brew install make
+# brew install nano
+# brew install file-formula
+# brew install git
+# brew install openssh
+# brew install perl
+# brew install rsync
+# brew install unzip
+
 brew install --cask dbeaver-community
 brew install --cask marta
 brew install --cask sloth
@@ -43,8 +71,3 @@ brew install --cask sloth
 alias copy="tr -d '\n' | pbcopy"
 alias o="open"
 alias run="open -a 'Google Chrome Canary' --args --disable-web-security --user-data-dir='/Users/gupta/Desktop/nosecurity'"
-
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/dotfiles/.gitconfig.work ~/.gitconfig.work
-ln -s ~/dotfiles/.gitignore ~/.gitignore
