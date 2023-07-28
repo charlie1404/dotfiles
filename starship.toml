@@ -5,7 +5,7 @@ command_timeout = 2000
 
 [battery]
 full_symbol = "🔋"
-# charging_symbol = "⚡️"
+charging_symbol = "⚡️"
 discharging_symbol = "💀 "
 
 [[battery.display]] 

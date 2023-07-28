@@ -48,7 +48,7 @@ alias duf='du -sh *'
 # alias ff='find . -type f -name'
 
 alias cat='bat'
-alias tmux='zellij'
+# alias tmux='zellij'
 alias nodevm='source "$HOME/.nvm/nvm.sh"'
 alias nohistory='fc -p'
 # Make zsh know about hosts already accessed by SSH

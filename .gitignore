@@ -6,6 +6,7 @@ log/
 secret/*.sh
 run.sh
 ignore.*
+*.ignore
 notes
 notes.*
 node_modules/

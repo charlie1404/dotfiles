@@ -32,6 +32,7 @@ brew install git-delta
 brew install gpg-tui
 brew install tmux
 brew install zellij
+brew install erdtree
 brew install derailed/k9s/k9s
 # brew install atuin # history manager with sqlite
 

@@ -30,6 +30,8 @@ export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/go/bin
 
+export BUILDKIT_PROGRESS=plain
+
 export LC_ALL=en_US.UTF-8
 export STARSHIP_CONFIG=$ZSH/starship.toml
 # export BAT_PAGER="less -g -i -R -S -w"
