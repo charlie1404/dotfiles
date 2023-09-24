@@ -12,3 +12,4 @@ notes.*
 node_modules/
 *.log
 *.work
+ignore/

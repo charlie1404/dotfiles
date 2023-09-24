@@ -2,7 +2,7 @@ brew install bat
 brew install bitwise
 brew install byobu
 brew install cloc
-brew install exa
+brew install eza
 brew install findutils
 brew install fx
 brew install fzf

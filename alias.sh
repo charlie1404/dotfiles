@@ -28,11 +28,11 @@ function d () {
 }
 compdef _dirs d
 
-alias l='exa -F'
-alias ls='exa -F'
-alias lr='exa -RlF'
-alias ll='exa -lahF --git'
-alias lll='exa -baghHliSF@ --git'
+alias l='eza -F'
+alias ls='eza -F'
+alias lr='eza -RlF'
+alias ll='eza -lahF --git'
+alias lll='eza -baghHliSF@ --git'
 
 alias grep='grep --color'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
