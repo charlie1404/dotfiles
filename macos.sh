@@ -68,7 +68,5 @@ brew install --cask dbeaver-community
 brew install --cask marta
 brew install --cask sloth
 
-# TODO
-alias copy="tr -d '\n' | pbcopy"
-alias o="open"
+
 alias run="open -a 'Google Chrome Canary' --args --disable-web-security --user-data-dir='/Users/gupta/Desktop/nosecurity'"
